@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvModelo"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Celulares" />
+
+    <ImageButton
+        android:id="@+id/ibEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFC107"
+        app:layout_constraintEnd_toStartOf="@+id/ibExcluir"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <ImageButton
+        android:id="@+id/ibExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ibEditar"
+        app:srcCompat="@drawable/ic_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>
